@@ -6,11 +6,14 @@
 ​
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css" />
 
     
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+
     
     <title>Harmonson Plumbing</title>
 </head>
@@ -36,7 +39,7 @@
                     </ul>
                 </div>
                 <div class="float-right">
-                    <button id="callButton" type="button"> Call 210-681-8570</button>
+                    <a role="button" class="btn btn-link" href="tel:+12106818570" id="callButton" ><i class="fa fa-phone"></i> Call 210-681-8570</a>
                 </div>
             </div>
           
@@ -73,9 +76,12 @@
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-5">
+                <h2>Our Promise:</h2>
+                <h3 class="d-none d-sm-block">Quality work at a fair price!</h3>
                 <h2>Peace of Mind</h2>
                 <h3 class="d-none d-sm-block">A company you can trust to take out the guesswork of 
-                residential and commercial repairs..</h3> 
+                residential and commercial repairs...</h3> 
+                
             </div>
             <div class="col">
                 <div class="media">
@@ -113,7 +119,7 @@
                 <div class="col text-center">
                     <h1 id="fixit">When in doubt, call the orange van!</h1> 
                     <div class="col">
-                        <button id="callButton2" type="button"> Call 210-681-8570</button>
+                        <a id="callButton2" role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 210-681-8570</a></button>
                     </div>
                 </div>
             </div>
@@ -121,6 +127,7 @@
         
     </div>
 
+    </footer>
     <div class="footer-dark">
         <footer>
             <div class="container">
@@ -130,7 +137,7 @@
                         <ul>
                             <li><a href="#">Repairs</a></li>
                             <li><a href="#">Installation</a></li>
-                            <li><a href="#">Peace of Mind</a></li>
+                            <li><a href="#">Investigation</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -144,19 +151,19 @@
                     <div class="col-md-6 item text">
                         <h3>Harmonson Plumbing</h3>
                         <p>Accountability to Quality</p>
+                        <a id="email" role="button" class="btn btn-link " href="mailito:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> plumb7777@hotmail.com</a>
                     </div>
                     <div class="col item social">
-                        <a href="#"><i class="icon ion-social-facebook"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
-                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/harmonsonplumbing"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://www.linkedin.com/in/david-harmonson-104a3166"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
                 <p class="copyright">Copyright 2021 © All Rights Reserved </p>
             </div>
         </footer>
     </div>
-    <img src="Images/pipes2.jpg" class="img-fluid"/>
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
