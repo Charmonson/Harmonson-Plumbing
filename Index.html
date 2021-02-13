@@ -6,6 +6,7 @@
 ​
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     
@@ -27,7 +28,7 @@
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -44,51 +45,79 @@
     <img src="Images/Side Header.jpg" class="img-fluid"/>
     </header>
     <!-- make a MODAL for the call to action -->
-    <div class="container" id= "container01">
-        <div class="row row-content align-items-center"> 
-            <div class="col-sm-4 col-md-5">
-                <h1>Accountable to Quality</h1>
-                <h3>Serving the Alamo City for more than twenty 
-                years as a family owned business. We are licensed, insured and ready to do the job right, the first time. </h3>
-               
-            </div>
-            <div class="col-sm-4 col-md-5">
-                <h2>Download our coupon to get $20 off your next plumbing service</h2>   
+    <div id="coupon">
+        <div class="container">
+            <div class="row row-content"> 
+                <div class="col-sm-4 col-md-5">
+                    <div class="media-body">
+                        <h1>Accountable to Quality</h1>
+                        <h3>Serving the Alamo City for more than twenty 
+                        years as a family owned business. We are licensed, insured and ready to do the job right, the first time. </h3> 
+                    </div>
+                    <div class="media-body">
+                        <h2>Download your coupon to get $20 off your next plumbing service</h2>
+                    </div>
+                    <div class="col text-center">
+                        <button id="getCoupon" type="button"> Get Coupon!</button>
+                    </div> 
+                </div> 
+                <div class="col-sm-4 col-md-5">
+                    <div class="media">
+                        <img class="d-flex img-thumbnail rounded float-right d-none d-sm-block" src= "Images/Coupon copy.jpg" 
+                        alt="discount coupon"/> 
+                    </div>   
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-5">
-                <h2>Repairs</h2>
-                <h3>Faucets, Showers, Sink Lines. Slab Leaks, Re-piping, 
-                Sewer Line Replacement, Water Coolers, Drain Cleaning.</h3>
-            </div>
-        </div>
-        <div class="row row-content align-items-center"> <!--might change class later depending on design-->
-            <div class="col-sm-4 col-md-5">
-                <h2>Installation</h2>
-                <h3>Pressure Reducing Valves, Water Heaters, All Plumbing Fixtures, 
-                Back Flow Valves.</h3>
-            </div>
-        </div>
-        <div class="row row-content align-items-center"> <!--might change class later depending on design-->
-            <div class="col-sm-4 col-md-5">
                 <h2>Peace of Mind</h2>
-                <h3>A company you can trust to take out the guesswork of 
+                <h3 class="d-none d-sm-block">A company you can trust to take out the guesswork of 
                 residential and commercial repairs..</h3> 
             </div>
-        </div>
-        <div class="row row-content align-items-center"> <!--might change class later depending on design-->
-            <div class="col-sm-4 col-md-5">
-                <h1>We will fix it!</h1> 
-                <div class="col-md-8 mx-auto">
-                    <a class="btn btn-info">Call 210-681-8570</a>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/Faucet 1.jpg"
+                    alt="faucet repair"/>
                 </div>
             </div>
         </div>
-       
+        <div class="row row-content align-items-center"> 
+            <div class="col-sm-4 col-md-5">
+                <h2>Repairs</h2>
+                <h3 class="d-none d-sm-block">Faucets, Showers, Sink Lines. Slab Leaks, Re-piping, 
+                Sewer Line Replacement, Water Coolers, Drain Cleaning.</h3>
+                <h2>Installation</h2>
+                <h3 class="d-none d-sm-block">Pressure Reducing Valves, Water Heaters, All Plumbing Fixtures, 
+                Back Flow Valves.</h3>
+              
+            </div>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/bathtub.jpg"
+                    alt="bathtub"/>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content"> 
            
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="Images/orangevan.jpg"
+                    alt="orangevan"/>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-5">
+                <div class="col text-center">
+                    <h1 id="fixit">When in doubt, call the orange van!</h1> 
+                    <div class="col">
+                        <button id="callButton2" type="button"> Call 210-681-8570</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </div>
 
@@ -99,23 +128,22 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Repairs</a></li>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Peace of Mind</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>About</h3>
                         <ul>
                             <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Blog</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. 
-                            Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <h3>Harmonson Plumbing</h3>
+                        <p>Accountability to Quality</p>
                     </div>
                     <div class="col item social">
                         <a href="#"><i class="icon ion-social-facebook"></i></a>
@@ -124,7 +152,7 @@
                         <a href="#"><i class="icon ion-social-instagram"></i></a>
                     </div>
                 </div>
-                <p class="copyright">Company Name © 2018</p>
+                <p class="copyright">Copyright 2021 © All Rights Reserved </p>
             </div>
         </footer>
     </div>
